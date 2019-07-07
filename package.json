@@ -130,7 +130,9 @@
   "license": "Apache-2.0",
   "scripts": {
     "lint": "eslint . && flow",
-    "validate": "npm ls"
+    "validate": "npm ls",
+    "start": "node server.js",
+    "heroku-postbuild": "webpack -p" 
   },
   "pre-commit": [
     "lint"
